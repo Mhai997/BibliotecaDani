@@ -1,0 +1,442 @@
+{
+	"info": {
+		"_postman_id": "bcde4c58-e2be-4995-8405-4aecf8fb76c2",
+		"name": "Biblioteca",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9186220"
+	},
+	"item": [
+		{
+			"name": "Autor",
+			"item": [
+				{
+					"name": "ObtenerTodos",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Frank Actual\",\r\n  \"apellido\": \"Kafka\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44310/api/Autor?id=3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44310",
+							"path": [
+								"api",
+								"Autor"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44310/api/Autor/id?id=3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44310",
+							"path": [
+								"api",
+								"Autor",
+								"id"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarAutor",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44310/api/Autor?id=2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44310",
+							"path": [
+								"api",
+								"Autor"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearAutor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Gabriel\",\r\n  \"apellido\": \"Garcia\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44310/api/Autor",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44310",
+							"path": [
+								"api",
+								"Autor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ActualizarAutor",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44310/api/Autor?id=3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44310",
+							"path": [
+								"api",
+								"Autor"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Editorial",
+			"item": [
+				{
+					"name": "ObtenerTodos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44310/api/Editorial",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44310",
+							"path": [
+								"api",
+								"Editorial"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44310/api/Editorial/id?id=3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44310",
+							"path": [
+								"api",
+								"Editorial",
+								"id"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarEditorial",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44310/api/Editorial?id=2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44310",
+							"path": [
+								"api",
+								"Editorial"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearEditorial",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"nombre\": \"La pluma verde\",\r\n        \"direccion\": \"Caracas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44310/api/Editorial",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44310",
+							"path": [
+								"api",
+								"Editorial"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ActualizarEditorial",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"La pluma gris modific\",\r\n    \"direccion\": \"6 de Diciembre\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44310/api/Editorial?id=3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44310",
+							"path": [
+								"api",
+								"Editorial"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Libro",
+			"item": [
+				{
+					"name": "ObtenerTodos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44310/api/Libro",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44310",
+							"path": [
+								"api",
+								"Libro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44310/api/Libro/id?id=6",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44310",
+							"path": [
+								"api",
+								"Libro",
+								"id"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarLibro",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44310/api/Libro?id=6",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44310",
+							"path": [
+								"api",
+								"Libro"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ActualizarLibro",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \r\n    \"titulo\": \"Libro 4 Modificado\",\r\n    \"isbn\": \"kg5\",\r\n    \"autor\": \"Gabriel Garcia\",\r\n    \"editorial\": \"La pluma verde\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44310/api/Libro?id=10",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44310",
+							"path": [
+								"api",
+								"Libro"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearLibro",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"titulo\": \"Libro 5\",\r\n  \"isbn\": \"kg5\",\r\n  \"autorId\": 5,\r\n  \"editorialId\": 4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44310/api/Libro",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44310",
+							"path": [
+								"api",
+								"Libro"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
